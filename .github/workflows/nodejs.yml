@@ -36,7 +36,7 @@ jobs:
     needs: [greeting]
     strategy:
       matrix:
-        node-version: [13.x]
+        node-version: [12.x]
     steps:
       - name: Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
         uses: actions/checkout@v2
@@ -47,14 +47,13 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Install Packages (npm ci) ... It will never write to package.json or any of the package-locks, installs are essentially frozen
-        run: npm ci
+        run: npm install
 
-      - name: List current folder
+      - name: List current folder ... before
         run: ls -la
 
       - name: Deploy project to GitHub Pages
         run: |
-          echo 'Git Repo: ${{github.repository}}'
           echo 'Git Repo: ${{env.MY_REPO}}'
 
           git config --global user.email ${{secrets.MY_SECRET_EMAIL}}
@@ -62,10 +61,10 @@ jobs:
           git remote set-url origin https://${{secrets.MY_SECRET_PERSONAL_ACCESS_TOKEN}}@github.com/${{env.MY_REPO}}
           npm run deploy
 
-      - name: List current folder
+      - name: List current folder ... after
         run: ls -la
 
-      - name: Updating Domain
+      - name: Updating Domain ... (SELECT gh-pages branch to publish)
         run: echo 'Update domain - GitHub Pages (SELECT gh-pages branch to publish)'
 
         env:
