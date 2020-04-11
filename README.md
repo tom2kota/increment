@@ -3,20 +3,23 @@ Simple increment / decrement React Redux App
 
 [DEMO PAGE](https://tom2kota.github.io/increment)
 
+```
+  Errors:
+
+  DOMException: "String contains an invalid character"
+
+  InvalidCharacterError: String contains an invalid character
+```  
+
 -----
 
 #### Deployment to GitHub Pages with Actions
 
-Status of Action:
-
-![1.React-Redux_App_Testing_CI](https://github.com/tom2kota/increment/workflows/1.React-Redux_App_Testing_CI/badge.svg)
-
 
 Status of Action:
 
-![2.React-Redux_App_Deploy_CI](https://github.com/tom2kota/increment/workflows/2.React-Redux_App_Deploy_CI/badge.svg)
 
-
+![React_App_Deploy_to_gh-pages_CI](https://github.com/tom2kota/increment/workflows/React_App_Deploy_to_gh-pages_CI/badge.svg)
 
 
 ----------------------------------------------------
