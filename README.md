@@ -11,6 +11,18 @@ Simple increment / decrement React Redux App
   InvalidCharacterError: String contains an invalid character
 ```  
 
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+```
+  npm install -g serve
+  serve -s build
+```
+Find out more about deployment here:
+
+  bit.ly/CRA-deploy
+
+
 -----
 
 #### Deployment to GitHub Pages with Actions
