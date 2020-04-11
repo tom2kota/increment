@@ -6,7 +6,7 @@
 # Fix build path links in: ... public/index.html
 # ----------------------------------------------------------------------------------
 
-name: React_App_Deploy_to_gh-pages_CI
+name: Deploy_gh_pages_CI
 env:
   APPLICATION_NAME: 'App Deploy CI'
   DEPLOY_PACKAGE_NAME: 'rap-v-${{ github.sha }}'
