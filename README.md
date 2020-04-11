@@ -1,7 +1,7 @@
 # increment-decrement
 Simple increment / decrement React Redux App
 
-[DEMO PAGE](https://tom2kota.github.io/increment-decrement/)
+[DEMO PAGE](https://tom2kota.github.io/increment)
 
 -----
 
@@ -9,12 +9,12 @@ Simple increment / decrement React Redux App
 
 Status of Action:
 
-![1.React-Redux_App_Testing_CI](https://github.com/tom2kota/increment-decrement/workflows/1.React-Redux_App_Testing_CI/badge.svg)
+![1.React-Redux_App_Testing_CI](https://github.com/tom2kota/increment/workflows/1.React-Redux_App_Testing_CI/badge.svg)
 
 
 Status of Action:
 
-![2.React-Redux_App_Deploy_CI](https://github.com/tom2kota/increment-decrement/workflows/2.React-Redux_App_Deploy_CI/badge.svg)
+![2.React-Redux_App_Deploy_CI](https://github.com/tom2kota/increment/workflows/2.React-Redux_App_Deploy_CI/badge.svg)
 
 
 
