@@ -39,11 +39,6 @@ jobs:
       matrix:
         node-version: [13.x]
     steps:
-      - name: NPM Version
-        run: npm -v
-        
-      - name: Node Version
-        run: node -v
       
       - name: Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
         uses: actions/checkout@v2
@@ -58,6 +53,12 @@ jobs:
 
       - name: List current folder ... before
         run: ls -la
+      
+      - name: NPM Version
+        run: npm -v
+        
+      - name: Node Version
+        run: node -v
 
       - name: Deploy project to GitHub Pages
         run: |
