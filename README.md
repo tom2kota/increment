@@ -11,16 +11,30 @@ Simple increment / decrement React Redux App
   InvalidCharacterError: String contains an invalid character
 ```  
 
-
-The build folder is ready to be deployed.
-You may serve it with a static server:
+SOLUTION: (use React.StrictMode)
 ```
-  npm install -g serve
-  serve -s build
-```
-Find out more about deployment here:
+import React from 'react';
+import ReactDOM from 'react-dom';
+import {Provider} from "react-redux";
+import {createStore} from "redux";
+import App from "./components/App";
+import reducers from './reducers'
 
-  bit.ly/CRA-deploy
+import * as serviceWorker from './serviceWorker';
+
+ReactDOM.render(
+    <React.StrictMode>
+        <Provider store={createStore(reducers)}>
+            <App/>
+        </Provider>
+    </React.StrictMode>,
+    document.getElementById('root')
+);
+
+serviceWorker.register();
+// serviceWorker.unregister();
+
+```
 
 
 -----
