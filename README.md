@@ -1,6 +1,15 @@
 # increment-decrement
 Simple increment / decrement React Redux App
 
+
+Status of Action:
+
+
+![React_App_Deploy_to_gh-pages_CI](https://github.com/tom2kota/increment/workflows/React_App_Deploy_to_gh-pages_CI/badge.svg)
+
+
+----------------------------------------------------
+
 [DEMO PAGE](https://tom2kota.github.io/increment)
 
 ```
@@ -11,44 +20,13 @@ Simple increment / decrement React Redux App
   InvalidCharacterError: String contains an invalid character
 ```  
 
-SOLUTION: (use React.StrictMode)
-```
-import React from 'react';
-import ReactDOM from 'react-dom';
-import {Provider} from "react-redux";
-import {createStore} from "redux";
-import App from "./components/App";
-import reducers from './reducers'
-
-import * as serviceWorker from './serviceWorker';
-
-ReactDOM.render(
-    <React.StrictMode>
-        <Provider store={createStore(reducers)}>
-            <App/>
-        </Provider>
-    </React.StrictMode>,
-    document.getElementById('root')
-);
-
-serviceWorker.register();
-// serviceWorker.unregister();
-
-```
-
-
+SOLUTION: (Rename WrappedCounter to WrappedCounter.js)
+ 
 -----
 
 #### Deployment to GitHub Pages with Actions
 
 
-Status of Action:
-
-
-![React_App_Deploy_to_gh-pages_CI](https://github.com/tom2kota/increment/workflows/React_App_Deploy_to_gh-pages_CI/badge.svg)
-
-
-----------------------------------------------------
 
 #### deployment tips:
 
